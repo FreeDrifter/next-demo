@@ -1,0 +1,22 @@
+:global(#MiChongBodyRoot) {
+  .navRoot {
+    position: fixed;
+    top: var(--top-nav-height);
+    left: 15px;
+    bottom: 0;
+    overflow-y: auto;
+    width: var(--product-nav-width);
+    // padding: @HomeNavPadding;
+  
+    display: flex;
+    flex-direction: column;
+  
+    .navLink {
+      width: 100%;
+      height: 66px;
+      line-height: 66px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

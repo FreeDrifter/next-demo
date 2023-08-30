@@ -1,0 +1,10 @@
+/* 业务相关样式 */
+#MiChongBodyRoot {
+  .mc-root {
+    background-color: rgb(var(--background-rgb));
+  
+    .mc-contents {
+      padding-top: var(--top-nav-height);
+    }
+  } 
+}

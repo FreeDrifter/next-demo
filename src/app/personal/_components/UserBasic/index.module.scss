@@ -1,0 +1,77 @@
+:global(#MiChongBodyRoot) {
+  .userBack {
+    background-image: url('https://lf3-motor.dcarstatic.com/obj/motor-fe-static/motor/pc/_next/static/images/profile-background-ae414c18ca8f86fe8d0b..png');
+    height: 210px;
+    background-size: cover;
+  }
+  
+  .accountInfo {
+    width: 85%;
+    padding: 0 28px;
+    margin: 0 auto;
+    position: relative;
+    height: 135px;
+    margin-top: -60px;
+    background-color: rgb(var(--background-rgb));
+    border-radius: 4px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    box-shadow: 0 2px 8px #f0f1f2;
+  
+    .accountBaseInfo {
+      float: left;
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 18px;
+      }
+  
+      .accountBasics {
+        display: flex;
+        flex-direction: column;
+  
+        h6 {
+          font-size: 22px;
+          margin: 0;
+        }
+  
+        p {
+          margin: 8px 0 0 0;
+          font-size: 13px;
+          color: rgb(var(--foreground-rgb));
+        }
+      }
+    }
+  }
+  
+  .accountRecords {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+  
+    .accountRecordItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      margin-right: 40px;
+      cursor: pointer;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+  
+}

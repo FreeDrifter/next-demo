@@ -1,0 +1,29 @@
+:global(#MiChongBodyRoot) {
+  .loadingVideo {
+    width: 300px;
+    height: 300px;
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+  }
+  
+  .emptyImageBox {
+    :global(.ant-empty-image) {
+      height: 350px !important;
+      margin-bottom: -25px;
+    }
+  
+    .emptyImage {
+      object-fit: cover;
+      width: 350px !important;
+    }
+  
+    .emptyDescription {
+      color: rgba(0, 0, 0, 0.25);
+      font-size: 16px;
+      line-height: 1;
+      cursor: pointer;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

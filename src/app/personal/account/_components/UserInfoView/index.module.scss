@@ -1,0 +1,47 @@
+:global(#MiChongBodyRoot) {
+  .editRoot {
+    .titleBox {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0 5px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      h3 {
+        font-size: 15px;
+        margin: 0;
+      }
+  
+      .editBtn {
+        margin-left: auto;
+      }
+    }
+  
+    .contentBox {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      .contentItem {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        font-size: 14px;
+        label {
+          width: 100px;
+          text-align: right;
+          margin-right: 10px;
+        }
+        span {
+          // 
+        }
+      }
+    }
+  }
+  
+  .editUserBox {
+    padding-top: 15px;
+    :global(.ant-picker) {
+      width: 100%;
+    }
+  }
+}

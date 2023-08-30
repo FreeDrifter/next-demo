@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4157394 */
+  src: url('./fonts/iconfont.woff2') format('woff2'),
+       url('./fonts/iconfont.woff') format('woff'),
+       url('./fonts/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dog:before {
+  content: "\e642";
+}
+
+.icon-household_products:before {
+  content: "\e619";
+}
+
+.icon-geren:before {
+  content: "\e614";
+}
+
+.icon-tuichu:before {
+  content: "\e641";
+}
+
+.icon-chongwu:before {
+  content: "\e612";
+}

@@ -1,0 +1,14 @@
+:global(#MiChongBodyRoot) {
+  .richEditorBox {
+    border: 1px solid rgb(204, 204, 204);
+  }
+  
+  .toolbarBox {
+    border-bottom: 1px solid rgb(204, 204, 204);
+  }
+  
+  .editorBox {
+    overflow-y: auto;
+    height: 300px;
+  }
+}

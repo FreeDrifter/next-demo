@@ -1,0 +1,39 @@
+.stepFormBox {
+  position: relative;
+  padding-bottom: 50px;
+
+  :global(.ant-pro-steps-form-container) {
+    width: 100%;
+  }
+}
+
+.stepBtnBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -32px;
+  padding: 0 32px;
+  :global(.ant-btn) {
+    margin-left: 8px;
+  }
+}
+
+.petForm {
+  :global(.ant-form-item) {
+    // margin-bottom: 20px !important;
+  }
+
+  :global(.ant-form-item-control-input-content) {
+    :global(.ant-picker) {
+      width: 100%;
+    }
+  }
+  :global(.ant-form-item-explain) {
+    font-size: 12px !important;
+  }
+}
+
+.popularizeInput {
+  width: 250px;
+}

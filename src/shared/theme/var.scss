@@ -1,0 +1,23 @@
+/**
+  全局变量定义
+*/
+
+// 正常模式
+:root {
+  --foreground-rgb: 51, 51, 51;
+  --background-rgb: 255, 255, 255;
+  --top-nav-height: 64px; // 顶部导航高度
+  --primary-color: #1677ff;
+  --error-color: #ff4d4f;
+
+  --product-nav-width: 80px; // 首页导航宽度
+
+}
+
+// 暗黑模式
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+  }
+}

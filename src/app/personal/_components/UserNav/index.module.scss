@@ -1,0 +1,78 @@
+:global(#MiChongBodyRoot) {
+  .navRoot {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  
+    li {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .navItem {
+  
+    }
+  
+    .navMenuLink {
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      color: lighten(rgb(51, 51, 51), 25%);
+      padding: 0 20px;
+      position: relative;
+  
+      &:hover {
+        cursor: pointer;
+        background-image: linear-gradient(to right, rgb(242, 244, 250) 0px, rgb(255, 255, 255) 100%);  
+      }
+      &:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 3px;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(51, 51, 51);
+      }
+  
+      i {
+        margin-right: 10px;
+        width: 16px;
+      }
+    }
+  
+    .navSubMenus {
+      font-size: 14px;
+      color: rgb(var(--foreground-rgb));
+      position: relative;
+      padding: 0;
+  
+      .navSubMenuContent {
+        height: 40px;
+        line-height: 40px;
+      }
+  
+      .navSubMenuLink {
+        padding-left: 20px + 16px + 10px;
+        display: block;
+        width: 100%;
+        // height: 100%;
+        &:hover {
+          cursor: pointer;
+          background-image: linear-gradient(to right, rgb(242, 244, 250) 0px, rgb(255, 255, 255) 100%);  
+        }
+        &:hover::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 3px;
+          top: 0;
+          bottom: 0;
+          background-color: rgb(var(--foreground-rgb));
+        }
+      }
+    }
+  }
+}

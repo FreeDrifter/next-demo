@@ -1,0 +1,251 @@
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './var.scss';
+@import './common.scss';
+@import './iconfont.scss';
+
+/* 全局公共样式 */
+html, body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  margin: 0;
+  font-size: 14px;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  background-color: #f7f8fc;
+}
+
+a:link {
+  // 未访问: 无下划线 
+  text-decoration: none;
+  color: rgb(var(--foreground-rgb));
+}
+a:active {
+  color: rgb(var(--foreground-rgb));
+}
+a:visited {
+  // 已访问: 无下划线 
+  text-decoration: none;
+  color: rgb(var(--foreground-rgb));
+}
+a:hover {
+   // 鼠标移近: 下划线
+  text-decoration: none;
+  color: rgb(var(--foreground-rgb));
+}
+
+#MiChongBodyRoot {
+  /* ==================== 业务相关全局 ====================== */
+  .mc-root-content .mc-link-btn {
+    color: var(--primary-color);
+    margin-right: 12px;
+    padding: 0;
+    &:link {
+      color: var(--primary-color);
+    }
+    &:active {
+      color: var(--primary-color);
+    }
+    &:visited {
+      color: var(--primary-color);
+    }
+    &:hover {
+      color: var(--primary-color);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  // 自定义搜索列表
+  .mc-root-content .mc-search-box {
+  
+    .mc-search-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .search-item {
+      width: calc(100% / 3);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 6px 0;
+      text-align: right;
+  
+      label {
+        font-size: 14px;
+        min-width: 75px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 400;
+        margin-right: 8px;
+  
+        &::after {
+          content: ':';
+        }
+      }
+  
+      .ant-input {
+        border-radius: 3px;
+      }
+    }
+  
+    @media only screen and (min-width: 1750px) {
+      .search-item {
+        width: calc(100% / 4);
+      }
+    }
+  
+    .search-actions {
+      @extend .search-item;
+      flex: auto;
+      white-space: nowrap;
+      margin-left: auto;
+  
+      .ant-btn {
+        margin-left: 12px;
+      }
+    }
+  }
+  
+  /* ==================== Ant Pro 自定义全局修改 ====================== */
+  
+  .mc-ant-pro-table-box {
+    // 搜索框间隔
+    .ant-pro-query-filter-row {
+      row-gap: 20px;
+    }
+  
+    .ant-pro-query-filter {
+      padding-bottom: 0 !important;
+    }
+  }
+  
+  .mc-ant-pro-step-form {
+    position: relative;
+    padding-bottom: 50px;
+  
+    .ant-pro-steps-form-container {
+      width: 100%;
+    }
+    .mc-step-btn-box {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      bottom: -32px;
+      padding: 0 32px;
+      .ant-btn {
+        margin-left: 8px;
+      }
+    }
+  }
+  
+  .mc-pet-form {
+    .ant-form-item {
+      // margin-bottom: 20px !important;
+    }
+  
+    .ant-form-item-control-input-content {
+      .ant-picker {
+        width: 100%;
+      }
+    }
+  
+    .ant-form-item-explain {
+      font-size: 12px !important;
+    }
+  }
+  
+  
+  
+  // =========== 待删除
+  
+  .home-hot-pets-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    .home-hot-pet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+      padding-top: 15px;
+  
+      img {
+        height: 30px !important;
+        width: 100% !important;
+        object-fit: contain;
+      }
+  
+      span {
+        display: block;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+  }
+  
+  .home-pet-search-box {
+    padding: 0 15px 15px 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    
+    .home-pet-sel {
+      margin-right: 10px;
+      width: 160px;
+    }
+  }
+  
+  .pet-choose-divider {
+    height: 4px;
+    background-color: #f7f8fc;
+  }
+  
+  .home-pet-select-box {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+  
+    .home-pet-sel-title {
+      width: 60px;
+      display: block;
+    }
+  
+    .home-pet-select-content {
+      flex: 1;
+      display: flex;
+      overflow: auto;
+    }
+  
+    .home-select-pet-info {
+      display: flex;
+      margin: 0 10px;
+      flex-direction: column;
+      align-items: center;
+  
+      .home-sel-type-name {
+        font-size: 14px;
+        text-align: center;
+      }
+  
+      .home-sel-type-links {
+        line-height: 18px;
+        font-size: 12px;
+        display: flex;
+        width: 92px;
+        justify-content: center;
+        margin: 2px auto;
+        color: #969aa9;
+      }
+    }
+  }
+}

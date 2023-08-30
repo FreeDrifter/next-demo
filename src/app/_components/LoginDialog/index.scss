@@ -1,0 +1,167 @@
+#MiChongBodyRoot {
+  .mc-login-root {
+    padding: 12px 16px 0 16px;
+  
+    .mc-login-form-box h3 {
+      line-height: 1.4;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+    }
+  
+    .mc-login-form {
+      margin-top: 24px;
+  
+      .mc-login-form-item {
+        position: relative;
+        margin-bottom: 20px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        height: 48px;
+        border-bottom: 1px solid rgb(230, 232, 242);
+        width: 100%;
+  
+        .ant-form-item-row {
+          width: 100%;
+        }
+  
+        .ant-input-password {
+          padding-left: 0;
+        }
+  
+        .mc-login-form-right-btn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 16px;
+          color: rgb(151, 154, 168);
+          font-weight: 400;
+          padding: 0;
+  
+          .mc-login-form-sms-btn {
+            color: rgb(151, 154, 168);
+            &:hover {
+              color: #1a1a1a;
+            }
+          }
+        }
+  
+        .ant-form-item-control-input + div {
+          position: absolute;
+          bottom: -10px;
+          left: 3px;
+          transform: translateY(100%);
+          .ant-form-item-explain {
+            font-size: 12px;
+          }
+        }
+  
+        .ant-form-row {
+          width: 100%;
+        }
+      }
+  
+      .mc-login-form-item:hover {
+        border-bottom-color: rgb(31, 33, 41);
+      }
+  
+      .mc-login-form-input, .mc-login-form-input:hover, .mc-login-form-input:focus {
+        input {
+          font-size: 16px;
+          padding-left: 3px;
+        }
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        border: none !important;
+        box-shadow: none !important;
+        width: 100%;
+      }
+  
+      .mc-login-form-input.ant-input {
+        padding-left: 3px;
+        font-size: 16px;
+      }
+  
+      .mc-login-form-input-password {
+        font-size: 16px;
+        padding-left: 3px;
+      }
+  
+      .mc-login-form-submit-btn, .mc-login-form-submit-btn:hover {
+        margin-top: 10px;
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        padding: 0;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+    }
+  }
+  
+  .mc-login-other-way {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+  
+    .other-way-label {
+      color: rgb(151, 154, 168);
+      vertical-align: middle;
+    }
+  
+    .other-way-img {
+      float: left;
+      height: 100%;
+      object-fit: contain;
+      margin-left: 12px;
+      height: 20px;    
+      width: 20px;
+    }
+  
+    .other-way-right {
+      margin-left: auto;
+    }
+  }
+  
+  .mc-login-agreement {
+    margin-top: 20px;
+    margin-bottom: -4px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(31, 33, 41);
+    a {
+      margin: 0px 2px;
+      color: rgb(32, 91, 230);
+    }
+  }
+  
+  .mc-login-agreement {
+    margin-top: 20px;
+    margin-bottom: -4px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(31, 33, 41);
+    a {
+      margin: 0px 2px;
+      color: rgb(32, 91, 230);
+    }
+  }
+  
+  .mc-login-reset-sms-btn {
+    text-align: center;
+    color: rgb(96, 99, 112);
+    margin-top: 16px;
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }  
+}

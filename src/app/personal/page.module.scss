@@ -1,0 +1,33 @@
+:global(#MiChongBodyRoot) {
+  .navBox {
+    position: fixed;
+    top: calc(var(--top-nav-height) + 20px);
+    bottom: 20px;
+    left: 55px;
+    background-color: rgb(var(--background-rgb));
+    width: 200px;
+    overflow-y: auto;
+    padding-top: 10px;
+  }
+  
+  .userContent {
+    position: absolute;
+    top: calc(var(--top-nav-height) + 20px);;
+    bottom: 20px;
+    left: 55px + 200px + 20px;
+    right: 55px;
+  }
+  
+  .userChildContent {
+    background-color: rgb(var(--background-rgb));
+    margin-top: 15px;
+    padding: 0;
+  }
+  
+  .loginWrapperBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
