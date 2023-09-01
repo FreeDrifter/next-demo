@@ -86,9 +86,9 @@ function useUserInfo() {
       setNewUserInfo(cachedUserInfo)
       setLoading(false)
       // 显示缓存数据后, 再加载并更新为远端数据
-      updateRemoteUserInfo()
+      // updateRemoteUserInfo()
     } else {
-      await updateRemoteUserInfo()
+      // await updateRemoteUserInfo()
       setLoading(false)
     }
 
